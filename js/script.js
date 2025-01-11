@@ -1,7 +1,3 @@
-document.getElementById('jobsForm').addEventListener('submit', function (e) {
-  e.preventDefault(); // Prevent form from submitting
-  alert('Form submitted successfully!');
-});
 
 
 ScrollReveal().reveal('.item2', {
@@ -30,9 +26,5 @@ ScrollReveal().reveal('.tS', {
   viewFactor:0.3,
 
 });
-//jobs.html
 
-  document.getElementById('jobsForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent form from submitting
-    alert('Form submitted successfully!');
-});
+

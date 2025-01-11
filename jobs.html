@@ -82,6 +82,9 @@
       <p>&copy; 2024 My Restaurant. All rights reserved.</p>
       <br />
     </footer>
-    <script src="js/script.js"></script>
+    <script>  document.getElementById('jobsForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent form from submitting
+      alert('Form submitted successfully!');
+  });</script>
   </body>
 </html>
