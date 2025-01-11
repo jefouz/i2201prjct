@@ -36,4 +36,3 @@ ScrollReveal().reveal('.tS', {
     e.preventDefault(); // Prevent form from submitting
     alert('Form submitted successfully!');
 });
-console.log(10);
