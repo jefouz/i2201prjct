@@ -603,6 +603,129 @@ margin-top: 10px;
 .form-container button:hover {
   background-color: var(--link-hover-color);
 }
+/* menu */
+
+#menuNav{width: 100vw;
+  display: flex;
+  height: 7vh;
+  background-color: var(--accent-color);
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-size: 0.9em;
+}
+.menu #menuNav {
+  
+  /* position: sticky; */
+  /* top: 0; */
+  background-color: var(--accent-color);   
+  /* z-index: 100; */
+}
+
+.menu #menuNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.menu #menuNav ul li a {
+  color: var(--font-color);
+  text-decoration: none;
+  /* font-size: 1.2em; */
+  /* padding: 10px; */
+  transition: opacity 0.3s;
+  
+}
+
+.menu #menuNav ul li a:hover {
+  opacity: 0.7;
+}
+
+
+.menu {
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--box-shadow-color);
+}
+
+
+.menu h1 {
+  text-align: center;
+  color: var(--accent-color);
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+
+.menu-category {
+  margin-bottom: 30px;
+}
+
+.menu-category h2 {
+  font-size: 28px;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.menu-item {
+  display: flex;
+  margin-bottom: 20px; 
+}
+
+.menu-item img {
+  width: 110px; 
+  position: relative;
+  right: 12px;
+  height: 100%;
+  
+}
+
+.menu .item-info {
+  display: flex;
+  flex-direction: column;  
+  width: auto;
+  position: relative;
+  right: 10px;
+  
+}
+
+.menu .item-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--font-color); 
+}
+
+.menu .item-description {
+  font-size: 0.8em;
+  color: var(--footer-text-color);  
+}
+
+
+.menu .cart a , .cart{
+display: flex;
+flex-direction: column;
+
+
+padding-top: 4px;
+color: var(--accent-color);
+position: relative;
+left: 13px;
+top: 2px;
+
+}
+
+
+
 
 
 /*animations*/
