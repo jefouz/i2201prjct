@@ -16,137 +16,103 @@
       </ul>
     </nav>
     <div class="menu">
-      <h1>Our Menu</h1>
-
-      <div id="menuNav">
-        <ul>
-          <li><a href="#appetizers">title</a></li>
-          <li><a href="#main-courses">title</a></li>
-          <li><a href="#desserts">title</a></li>
-          <li><a href="#drinks">title</a></li>
-        </ul>
+      <h2>Menu</h2>
+      <div class="menu-item">
+          <span>Pizza</span>
+          <span>$10</span>
+          <input type="number" min="1" value="1" class="quantity" style="width: 50px;">
+          <button onclick="addToCart('Pizza', 10)">Add to Cart</button>
       </div>
-
-      <div class="menu-category">
-        <h2 id="appetizers">Appetizers</h2>
-        <div class="menu-item">
-          <img src="assets/burger.jpg" alt="burger" />
-          <div class="item-info">
-            <span class="item-name">Name</span>
-            <span class="item-description"
-              >Description bla bla bla bla bla bla bla bla bla bla bla bla
-            </span>
-          </div>
-          <div class="cart">
-            <span class="item-price">99.99$</span>
-            <span><a href="#home">Add</a></span>
-          </div>
-        </div>
-        <div class="menu-item">
-          <img src="assets/burger.jpg" alt="burger" />
-          <div class="item-info">
-            <span class="item-name">Name</span>
-            <span class="item-description"
-              >Description bla bla bla bla bla bla bla bla bla bla bla bla</span
-            >
-          </div>
-          <div class="cart">
-            <span class="item-price">99.99$</span>
-            <span><a href="#home">Add</a></span>
-          </div>
-        </div>
+      <div class="menu-item">
+          <span>Burger</span>
+          <span>$8</span>
+          <input type="number" min="1" value="1" class="quantity" style="width: 50px;">
+          <button onclick="addToCart('Burger', 8)">Add to Cart</button>
       </div>
-
-      <div class="menu-category">
-        <h2 id="main-courses">Main-course</h2>
-        <div class="menu-item">
-          <img src="assets/burger.jpg" alt="burger" />
-          <div class="item-info">
-            <span class="item-name">Name</span>
-            <span class="item-description"
-              >Description bla bla bla bla bla bla bla bla bla bla bla bla</span
-            >
-          </div>
-          <div class="cart">
-            <span class="item-price">99.99$</span>
-            <span><a href="#home">Add</a></span>
-          </div>
-        </div>
-        <div class="menu-item">
-          <img src="assets/burger.jpg" alt="burger" />
-          <div class="item-info">
-            <span class="item-name">Name</span>
-            <span class="item-description"
-              >Description bla bla bla bla bla bla bla bla bla bla bla bla</span
-            >
-          </div>
-          <div class="cart">
-            <span class="item-price">99.99$</span>
-            <span><a href="#home">Add</a></span>
-          </div>
-        </div>
+      <div class="menu-item">
+          <span>Pasta</span>
+          <span>$12</span>
+          <input type="number" min="1" value="1" class="quantity" style="width: 50px;">
+          <button onclick="addToCart('Pasta', 12)">Add to Cart</button>
       </div>
+  </div>
+  
+  <div class="cart">
+      <h2>Cart</h2>
+      <ul id="cartItems"></ul>
+      <p id="totalPrice">Total: $0</p>
+      <button onclick="sendOrder()">Place Order</button>
+  </div>
+  
+  <script>
+    const cart = {};
 
-      <div class="menu-category">
-        <h2 id="desserts">Desserts</h2>
-        <div class="menu-item">
-          <img src="assets/assets/burger.jpg" alt="burger" />
-          <div class="item-info">
-            <span class="item-name">Name</span>
-            <span class="item-description"
-              >Description bla bla bla bla bla bla bla bla bla bla bla bla</span
-            >
-          </div>
-          <div class="cart">
-            <span class="item-price">99.99$</span>
-            <span><a href="#home">Add</a></span>
-          </div>
-        </div>
-        <div class="menu-item">
-          <img src="assets/assets/burger.jpg" alt="burger" />
-          <div class="item-info">
-            <span class="item-name">Name</span>
-            <span class="item-description"
-              >Description bla bla bla bla bla bla bla bla bla bla bla bla</span
-            >
-          </div>
-          <div class="cart">
-            <span class="item-price">99.99$</span>
-            <span><a href="#home">Add</a></span>
-          </div>
-        </div>
-      </div>
+    function addToCart(item, price) {
+        const quantityInput = document.querySelector(`.menu-item:has(button[onclick="addToCart('${item}', ${price})"]) .quantity`);
+        const quantity = parseInt(quantityInput.value) || 1;
 
-      <div class="menu-category">
-        <h2 id="drinks">Drinks</h2>
-        <div class="menu-item">
-          <img src="assets/burger.jpg" alt="burger" />
-          <div class="item-info">
-            <span class="item-name">Name</span>
-            <span class="item-description"
-              >Description bla bla bla bla bla bla bla bla bla bla bla bla</span
-            >
-          </div>
-          <div class="cart">
-            <span class="item-price">99.99$</span>
-            <span><a href="#home">Add</a></span>
-          </div>
-        </div>
-        <div class="menu-item">
-          <img src="assets/burger.jpg" alt="burger" />
-          <div class="item-info">
-            <span class="item-name">Name</span>
-            <span class="item-description"
-              >Description bla bla bla bla bla bla bla bla bla bla bla bla</span
-            >
-          </div>
-          <div class="cart">
-            <span class="item-price">99.99$</span>
-            <span><a href="#home" id="add">Add</a></span>
-          </div>
-        </div>
-      </div>
-    </div>
+        if (cart[item]) {
+            cart[item].quantity += quantity;
+        } else {
+            cart[item] = { quantity, price };
+        }
+        updateCart();
+    }
+
+    function removeFromCart(item) {
+        if (cart[item]) {
+            delete cart[item];
+            updateCart();
+        }
+    }
+
+    function updateCart() {
+        const cartItems = document.getElementById('cartItems');
+        const totalPriceElem = document.getElementById('totalPrice');
+        cartItems.innerHTML = '';
+        let total = 0;
+
+        for (const [item, details] of Object.entries(cart)) {
+            const { quantity, price } = details;
+            total += quantity * price;
+            const li = document.createElement('li');
+            li.innerHTML = `${item} x${quantity} - $${(quantity * price).toFixed(2)} <button onclick="removeFromCart('${item}')">Remove</button>`;
+            cartItems.appendChild(li);
+        }
+
+        totalPriceElem.textContent = `Total: $${total.toFixed(2)}`;
+    }
+
+    function sendOrder() {
+        if (Object.keys(cart).length === 0) {
+            alert('Your cart is empty!');
+            return;
+        }
+
+        if (!navigator.geolocation) {
+            alert('Geolocation is not supported by your browser.');
+            return;
+        }
+
+        navigator.geolocation.getCurrentPosition(
+            position => {
+                const { latitude, longitude } = position.coords;
+                const location = `https://www.google.com/maps?q=${latitude},${longitude}`;
+
+                const orderText = Object.entries(cart)
+                    .map(([item, details]) => `${item} x${details.quantity} - $${(details.quantity * details.price).toFixed(2)}`)
+                    .join(', ');
+
+                const whatsappURL = `https://wa.me/+96170945378?text=${encodeURIComponent('Order: ' + orderText + '\nLocation: ' + location)}`;
+                window.open(whatsappURL, '_blank');
+            },
+            error => {
+                alert('Unable to retrieve location.');
+            }
+        );
+    }
+</script>
+
     <footer>
       <section id="contact-info">
         <h3>Operating Hours:</h3>
