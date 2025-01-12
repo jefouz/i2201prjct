@@ -8,6 +8,9 @@
   --footer-text-color: lightgray;
   --box-shadow-color: rgba(0, 0, 0, 0.2);
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /*!body*/
 body {
@@ -511,7 +514,8 @@ footer p {
   animation: slideIn 1s 1.4s backwards;
 }
 .c{
-  box-shadow: 0px 4px 6px var(--box-shadow-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 background-position: top;
   background-color: var(--footer-bg-color);
   border: 2px solid var(--accent-color);
@@ -611,40 +615,75 @@ margin-top: 10px;
   background-color: var(--bg-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.menu-item {
+.menu h1{
+  text-align: center;
+}
+.menu fieldset{
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.img-label{
+  
+  width: 100px;
+ height: fit-content;
+
+ border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.img-label img{
+  width:70px;
+  height:75px;
+  border-radius:50%;
+  border: var(--accent-color) 2px solid;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  
+}
+.menu-item { height: fit-content;
+  background-color: var(--footer-bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
   padding: 10px;
   border-bottom: 1px solid var(--accent-color);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
-.menu-item:last-child {
-  border-bottom: none;
-}
+
+
 .menu input{
   background-color: var(--accent-color);
   border: solid 2px black;
   border-radius: 20px;
   padding: 10px;
 }
-.cart {
-  border-top: #ff6500 1px solid;
+#cart {
+  justify-content: center;
+  text-align: center;
+  border-bottom: #ff6500 1px solid;
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
   background: var(--bg-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.menu button , .cart button{
+.menu button , #cart button{
   padding: 10px;
-  margin-top: 10px;
+  
  background-color: var(--accent-color);
  border: 1px solid var(--bg-color);
  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
  border-radius: 20px;
 }
-.menu button:hover , .cart button:hover{
+.menu button:hover , #cart button:hover{
   cursor: pointer;
   background-color: var(--link-hover-color);
   transition-duration: 1s;

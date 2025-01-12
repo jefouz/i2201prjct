@@ -11,107 +11,297 @@
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="menu.html">MENU</a></li>
-        <li><a href="cart.html">CART</a></li>
+        <li><a href="menu.html#cart">CART</a></li>
         <li><a href="branches.html">LOCATIONS</a></li>
       </ul>
     </nav>
+   
     <div class="menu">
-      <h2>Menu</h2>
+      <h1>Menu:</h1>
+     <fieldset>
+        <legend>Burgers</legend>
+        <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/Lebanese-Burger.jpg" alt="" />
+              <span>Lebanese burger</span>
+            </div>
+            <span>price: $4</span>
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity"
+              style="width: 50px"
+            />
+            <button onclick="addToCart('Lebanese burger', 4)">Add to Cart</button>
+          </div>
+          <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/american burger.jpg" alt="" />
+              <span>American burger<span></span>
+            </div>
+            <span>price: $6</span>
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity"
+              style="width: 50px"
+              
+            />
+            <button onclick="addToCart('American burger', 6)">Add to Cart</button>
+          </div>
+          <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/cheese burger.jpg" alt="" />
+              <span>Cheese burger</span>
+            </div>
+            <span>price: $5</span>
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity"
+              style="width: 50px"
+            />
+            <button onclick="addToCart('Cheese burger', 5)">Add to Cart</button>
+          </div>
+     </fieldset>
+     <br>
+     <fieldset>
+        <legend>Pizza</legend>
+        <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/vegtables pizza.jpg" alt="" />
+              <span>Pizza vegtables</span>
+            </div>
+            <span>price: $6</span>
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity"
+              style="width: 50px"
+            />
+            <button onclick="addToCart('Pizza vegtables', 6)">Add to Cart</button>
+          </div>
+          <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/pizza margheritta.webp" alt="" />
+              <span>Pizza margheritta</span>
+            </div>
+            <span>price: $7</span>
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity"
+              style="width: 50px"
+            />
+            <button onclick="addToCart('Pizza margheritta', 7)">Add to Cart</button>
+          </div>
+          <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/cheese pizza.webp" alt="" />
+              <span>Pizza Cheese</span>
+            </div>
+            <span>price: $6</span>
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity"
+              style="width: 50px"
+            />
+            <button onclick="addToCart('Pizza cheese', 6)">Add to Cart</button>
+          </div>
+     </fieldset>
+     <br>
+     <fieldset id="combos">
+        <legend>Combos</legend>
+        <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/burger combo.jpg" alt="" />
+              <span>Burger combo</span>
+            </div>
+            <span>price: $8</span>
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity"
+              style="width: 50px"
+            />
+            <button onclick="addToCart('Burger combo', 8)">Add to Cart</button>
+          </div>
+          <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/pasta.jpg" alt="" />
+              <span>Pasta combo</span>
+            </div>
+            <span>price: $8</span>
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity"
+              style="width: 50px"
+            />
+            <button onclick="addToCart('Pasta combo', 8)">Add to Cart</button>
+          </div>
+          <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/pizza.jpg" alt="" />
+              <span>Pizza combo</span>
+            </div>
+            <span>price: $10</span>
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity"
+              style="width: 50px"
+            />
+            <button onclick="addToCart('Pizza combo', 10)">Add to Cart</button>
+          </div>
+     </fieldset>
+     <br>
+     <fieldset>
+      <legend>Drinks</legend>
       <div class="menu-item">
-          <span>Pizza</span>
-          <span>$10</span>
-          <input type="number" min="1" value="1" class="quantity" style="width: 50px;">
-          <button onclick="addToCart('Pizza', 10)">Add to Cart</button>
-      </div>
-      <div class="menu-item">
-          <span>Burger</span>
-          <span>$8</span>
-          <input type="number" min="1" value="1" class="quantity" style="width: 50px;">
-          <button onclick="addToCart('Burger', 8)">Add to Cart</button>
-      </div>
-      <div class="menu-item">
-          <span>Pasta</span>
-          <span>$12</span>
-          <input type="number" min="1" value="1" class="quantity" style="width: 50px;">
-          <button onclick="addToCart('Pasta', 12)">Add to Cart</button>
-      </div>
-  </div>
-  
-  <div class="cart">
+          <div class="img-label">
+            <img src="assets/pepsi.avif" alt="" />
+            <span>Pepsi</span>
+          </div>
+          <span>price: $1</span>
+          <input
+            type="number"
+            min="1"
+            value="1"
+            class="quantity"
+            style="width: 50px"
+          />
+          <button onclick="addToCart('Pepsi', 1)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <div class="img-label">
+            <img src="assets/mirinda-can-330ml.webp" alt="" />
+            <span>Miranda</span>
+          </div>
+          <span>price: $1</span>
+          <input
+            type="number"
+            min="1"
+            value="1"
+            class="quantity"
+            style="width: 50px"
+          />
+          <button onclick="addToCart('Miranda', 1)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <div class="img-label">
+            <img src="assets/7up.jpg" alt="" />
+            <span>7 up</span>
+          </div>
+          <span>price: $5</span>
+          <input
+            type="number"
+            min="1"
+            value="1"
+            class="quantity"
+            style="width: 50px"
+          />
+          <button onclick="addToCart('7up', 1)">Add to Cart</button>
+        </div>
+   </fieldset>
+    </div>
+    <div id="cart">
       <h2>Cart</h2>
       <ul id="cartItems"></ul>
       <p id="totalPrice">Total: $0</p>
       <button onclick="sendOrder()">Place Order</button>
-  </div>
-  
-  <script>
-    const cart = {};
+    </div>
+   
 
-    function addToCart(item, price) {
-        const quantityInput = document.querySelector(`.menu-item:has(button[onclick="addToCart('${item}', ${price})"]) .quantity`);
+    <script>
+      const cart = {};
+
+      function addToCart(item, price) {
+        const quantityInput = document.querySelector(
+          `.menu-item:has(button[onclick="addToCart('${item}', ${price})"]) .quantity`
+        );
         const quantity = parseInt(quantityInput.value) || 1;
 
         if (cart[item]) {
-            cart[item].quantity += quantity;
+          cart[item].quantity += quantity;
         } else {
-            cart[item] = { quantity, price };
+          cart[item] = { quantity, price };
         }
         updateCart();
-    }
+      }
 
-    function removeFromCart(item) {
+      function removeFromCart(item) {
         if (cart[item]) {
-            delete cart[item];
-            updateCart();
+          delete cart[item];
+          updateCart();
         }
-    }
+      }
 
-    function updateCart() {
-        const cartItems = document.getElementById('cartItems');
-        const totalPriceElem = document.getElementById('totalPrice');
-        cartItems.innerHTML = '';
+      function updateCart() {
+        const cartItems = document.getElementById("cartItems");
+        const totalPriceElem = document.getElementById("totalPrice");
+        cartItems.innerHTML = "";
         let total = 0;
 
         for (const [item, details] of Object.entries(cart)) {
-            const { quantity, price } = details;
-            total += quantity * price;
-            const li = document.createElement('li');
-            li.innerHTML = `${item} x${quantity} - $${(quantity * price).toFixed(2)} <button onclick="removeFromCart('${item}')">Remove</button>`;
-            cartItems.appendChild(li);
+          const { quantity, price } = details;
+          total += quantity * price;
+          const li = document.createElement("li");
+          li.innerHTML = `${item} x${quantity} - $${(quantity * price).toFixed(
+            2
+          )} <button onclick="removeFromCart('${item}')">Remove</button>`;
+          cartItems.appendChild(li);
         }
 
         totalPriceElem.textContent = `Total: $${total.toFixed(2)}`;
-    }
+      }
 
-    function sendOrder() {
+      function sendOrder() {
         if (Object.keys(cart).length === 0) {
-            alert('Your cart is empty!');
-            return;
+          alert("Your cart is empty!");
+          return;
         }
 
         if (!navigator.geolocation) {
-            alert('Geolocation is not supported by your browser.');
-            return;
+          alert("Geolocation is not supported by your browser.");
+          return;
         }
 
         navigator.geolocation.getCurrentPosition(
-            position => {
-                const { latitude, longitude } = position.coords;
-                const location = `https://www.google.com/maps?q=${latitude},${longitude}`;
+          (position) => {
+            const { latitude, longitude } = position.coords;
+            const location = `https://www.google.com/maps?q=${latitude},${longitude}`;
 
-                const orderText = Object.entries(cart)
-                    .map(([item, details]) => `${item} x${details.quantity} - $${(details.quantity * details.price).toFixed(2)}`)
-                    .join(', ');
+            const orderText = Object.entries(cart)
+              .map(
+                ([item, details]) =>
+                  `${item} x${details.quantity} - $${(
+                    details.quantity * details.price
+                  ).toFixed(2)}`
+              )
+              .join(", ");
 
-                const whatsappURL = `https://wa.me/+96170945378?text=${encodeURIComponent('Order: ' + orderText + '\nLocation: ' + location)}`;
-                window.open(whatsappURL, '_blank');
-            },
-            error => {
-                alert('Unable to retrieve location.');
-            }
+            const whatsappURL = `https://wa.me/+96170945378?text=${encodeURIComponent(
+              "Order: " + orderText + "\nLocation: " + location
+            )}`;
+            window.open(whatsappURL, "_blank");
+          },
+          (error) => {
+            alert("Unable to retrieve location.");
+          }
         );
-    }
-</script>
+      }
+    </script>
 
     <footer>
       <section id="contact-info">
