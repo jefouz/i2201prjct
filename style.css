@@ -8,7 +8,7 @@
   --footer-text-color: lightgray;
   --box-shadow-color: rgba(0, 0, 0, 0.2);
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -88,13 +88,12 @@ nav ul li a:hover {
 /*main content*/
 main {
   text-align: center;
-  overflow: visible ;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
   height: fit-content;
- 
 }
 
 /*main top side*/
@@ -112,9 +111,10 @@ main {
   text-align: left;
   padding-left: 30px;
 }
-.topSellers{opacity: 0;
+.topSellers {
+  opacity: 0;
   border-bottom: #ff6500 1px solid;
-  animation:  opacityChange 1s 2s forwards;
+  animation: opacityChange 1s 2s forwards;
 }
 
 .tS {
@@ -154,8 +154,8 @@ main {
 }
 .item img {
   width: 100%;
-  height: 200px; 
-  object-fit: cover; 
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s;
 }
@@ -178,8 +178,6 @@ main {
   box-shadow: 0 6px 12px var(--box-shadow-color);
 }
 
-
-
 /* ! */
 header {
   text-align: center;
@@ -198,11 +196,10 @@ header p {
   margin-bottom: 30px;
 }
 
-
 #combos {
   display: flex;
   flex-wrap: wrap;
- justify-content: center;
+  justify-content: center;
   gap: 20px;
   padding: 20px;
   animation: fadeIn 1.5s ease-out;
@@ -214,22 +211,19 @@ header p {
   box-shadow: 0 4px 6px var(--box-shadow-color);
   padding: 20px;
   text-align: center;
-  
-  
+  transform: translateY(0px);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 250px;
+  transition: transform 1s;
 }
-
-
 
 .combo-item img {
   width: 100%;
-  height: 200px; 
-  object-fit: cover; 
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
-  transition: transform 0.3s;
 }
 
 .combo-item img:hover {
@@ -255,11 +249,10 @@ header p {
 
 .combo-item:hover {
   cursor: pointer;
+
   transform: translateY(-5px);
   box-shadow: 0 6px 12px var(--box-shadow-color);
 }
-
-
 
 footer {
   text-align: center;
@@ -274,10 +267,6 @@ footer p {
   color: var(--footer-text-color);
 }
 
-
-
-
-
 /*main bottom  side*/
 #main2 {
   display: flex;
@@ -288,6 +277,7 @@ footer p {
   justify-content: center;
 }
 .item2 {
+  transition-duration: 1s;
   background-color: var(--footer-bg-color);
   box-shadow: 0 4px 6px var(--box-shadow-color);
   height: 350px;
@@ -298,10 +288,7 @@ footer p {
   align-items: center;
   justify-content: center;
   text-align: center;
-  
 }
-
-
 
 .item2:hover {
   transform: translateY(-5px);
@@ -347,7 +334,6 @@ footer p {
   background-size: 80%;
   background-repeat: no-repeat;
 }
-
 
 /*footer*/
 footer {
@@ -416,12 +402,11 @@ footer p {
   height: 30vh;
   width: 100vw;
   max-width: 500px;
-  
+
   display: flex;
   overflow: visible;
   align-items: center;
   justify-content: center;
-  
 }
 .c11 {
   width: 30%;
@@ -429,118 +414,101 @@ footer p {
   border-radius: 10% 10% 50% 10%;
   margin-top: 22vh;
   margin-right: 1vw;
-  background-image:url('assets/beirut\ 2.jpg') ;
+  background-image: url("assets/beirut\ 2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
- 
+
   animation: slideIn 1s 1.4s ease-in-out backwards;
 }
 .c12 {
   width: 40%;
   height: 100%;
-  border-radius:   30%  ;
+  border-radius: 30%;
   margin-bottom: 2vh;
-  background-image:url('assets/baalbek.jpg') ;
+  background-image: url("assets/baalbek.jpg");
   background-size: cover;
   background-repeat: no-repeat;
- 
+
   animation: slideIn4 1s 0.5s ease-in-out backwards;
-
-  
-
 }
 .c13 {
   width: 30%;
   height: 100%;
-  border-radius: 10% 10% 10% 50% ;
+  border-radius: 10% 10% 10% 50%;
   margin-top: 22vh;
   margin-left: 1vw;
-  background-image:url('assets/byblos.jpg') ;
+  background-image: url("assets/byblos.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  
-  animation: slideIn2 1s 1.4s ease-in-out backwards;
 
+  animation: slideIn2 1s 1.4s ease-in-out backwards;
 }
 
 .c22 {
   width: 50%;
   height: 100%;
   border-radius: 50%;
-  background-image:url('assets/beirut.jpg') ;
+  background-image: url("assets/beirut.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-   
-  animation: opacityChange 2s 0.3s ease-in-out backwards; 
+
+  animation: opacityChange 2s 0.3s ease-in-out backwards;
 }
 
 .c31 {
- 
   width: 30%;
   height: 100%;
-  border-radius: 10%  50% 10% 10%;
+  border-radius: 10% 50% 10% 10%;
   margin-bottom: 22vh;
   margin-right: 1vw;
-  background-image:url('assets/saida.jpg') ;
+  background-image: url("assets/saida.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   animation: slideIn2 1s 1.4s ease-in-out backwards;
-
-  
-
-
 }
 .c32 {
-  
   width: 40%;
   height: 100%;
-  border-radius:   30%  ;
-  margin-top:2vh ;
-  background-image:url('assets/tyre.jpg') ;
+  border-radius: 30%;
+  margin-top: 2vh;
+  background-image: url("assets/tyre.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   animation: slideIn3 1s 0.5s ease-in-out backwards;
-
-
 }
 .c33 {
-  
   width: 30%;
   height: 100%;
   border-radius: 50% 10% 10% 10%;
   margin-bottom: 22vh;
   margin-left: 1vw;
-  background-image:url('assets/tyre\ 2.jpg') ;
+  background-image: url("assets/tyre\ 2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   animation: slideIn 1s 1.4s backwards;
 }
-.c{
+.c {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-background-position: top;
+  background-position: top;
   background-color: var(--footer-bg-color);
   border: 2px solid var(--accent-color);
   transition-duration: 1s;
 }
-.c:hover{
+.c:hover {
   cursor: pointer;
   transform: scale(1.1);
-  
- 
 }
-  
-#wrapperLocations{
-  
-margin-top: 10px;
+
+#wrapperLocations {
+  margin-top: 10px;
 
   margin-left: auto;
   margin-right: auto;
-
 }
 /* jobs.html */
 .form-container {
- text-overflow: ellipsis;
+  text-overflow: ellipsis;
   background-color: var(--footer-bg-color);
   padding: 20px 30px;
   border-radius: 10px;
@@ -551,7 +519,6 @@ margin-top: 10px;
   margin-right: auto;
 }
 
-
 .form-container p {
   text-align: center;
   margin-bottom: 20px;
@@ -560,7 +527,6 @@ margin-top: 10px;
 
 .form-group {
   margin-bottom: 15px;
-  
 }
 
 .form-container label {
@@ -569,10 +535,11 @@ margin-top: 10px;
   color: var(--font-color);
   position: relative;
   right: 15px;
-  
 }
 
-.form-container input, select, textarea {
+.form-container input,
+select,
+textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--box-shadow-color);
@@ -582,15 +549,16 @@ margin-top: 10px;
   font-family: inherit;
   position: relative;
   right: 15px;
-
 }
-.form-container textarea{
+.form-container textarea {
   resize: none;
 }
 
-.form-container input:focus, select:focus, textarea:focus {
+.form-container input:focus,
+select:focus,
+textarea:focus {
   transition-duration: 1s;
-  outline: none; 
+  outline: none;
   border-color: var(--accent-color);
 }
 
@@ -617,38 +585,32 @@ margin-top: 10px;
   background-color: var(--bg-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.menu h1{
+.menu h1 {
   text-align: center;
 }
-.menu fieldset{
+.menu fieldset {
   border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
 }
-.img-label{
-  
+.img-label {
   width: 100px;
- height: fit-content;
+  height: fit-content;
 
- border-radius: 30px;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  
 }
-.img-label img{
-  width:70px;
-  height:75px;
-  border-radius:50%;
+.img-label img {
+  width: 70px;
+  height: 75px;
+  border-radius: 50%;
   border: var(--accent-color) 2px solid;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-  
 }
-.menu-item { 
-  
+.menu-item {
   height: fit-content;
   background-color: var(--footer-bg-color);
   display: flex;
@@ -659,11 +621,13 @@ margin-top: 10px;
   border-bottom: 1px solid var(--accent-color);
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
 }
-
-
-.menu input{
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.menu input {
   background-color: var(--accent-color);
   border: solid 2px black;
   border-radius: 20px;
@@ -679,15 +643,17 @@ margin-top: 10px;
   background: var(--bg-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.menu button , #cart button{
+.menu button,
+#cart button {
   padding: 10px;
-  
- background-color: var(--accent-color);
- border: 1px solid var(--bg-color);
- box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- border-radius: 20px;
+
+  background-color: var(--accent-color);
+  border: 1px solid var(--bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
-.menu button:hover , #cart button:hover{
+.menu button:hover,
+#cart button:hover {
   cursor: pointer;
   background-color: var(--link-hover-color);
   transition-duration: 1s;
@@ -714,7 +680,7 @@ margin-top: 10px;
     opacity: 1;
   }
 }
-@keyframes slideIn3{
+@keyframes slideIn3 {
   from {
     transform: translateY(100%);
     opacity: 0;
@@ -723,9 +689,8 @@ margin-top: 10px;
     transform: translateY(0);
     opacity: 1;
   }
- 
 }
-@keyframes slideIn4{
+@keyframes slideIn4 {
   from {
     transform: translateY(-100%);
     opacity: 0;
@@ -734,7 +699,6 @@ margin-top: 10px;
     transform: translateY(0);
     opacity: 1;
   }
- 
 }
 
 @keyframes opacityChange {
@@ -765,3 +729,415 @@ margin-top: 10px;
   }
 }
 /*media queries*/
+@media screen and (min-width: 0px) {
+  nav {
+    height: 7vh;
+
+    font-size: 0.9em;
+  }
+
+  /*main top side*/
+
+  .topSellers {
+    font-size: 2em;
+  }
+
+  .item {
+    border-radius: 10px;
+
+    padding: 20px;
+
+    width: 130px;
+  }
+}
+@media screen and (min-width: 481px) {
+  nav {
+    height: 7vh;
+
+    font-size: 1.2em;
+  }
+
+  #main1 #title {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 1.5em;
+  }
+
+  .tS {
+    border-bottom: var(--accent-color) 1px solid;
+    padding: 10px;
+    font-size: 1.3em;
+  }
+
+  #content1 {
+    gap: 20px;
+  }
+  .item {
+    padding: 20px;
+
+    width: 200px;
+  }
+
+  .item2 button {
+    font-size: 1em;
+
+    border-radius: 20px;
+
+    width: 150px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  /*footer*/
+
+  /*!locations*/
+  #wrapperLocations {
+    margin-top: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .row {
+    height: 30vh;
+    width: 100vw;
+    max-width: 700px;
+  }
+
+  .c22 {
+    max-width: 300px;
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url("assets/beirut.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    animation: opacityChange 2s 0.3s ease-in-out backwards;
+  }
+
+  /* menu */
+
+  .menu h1 {
+    font-size: 3em;
+  }
+
+  .img-label {
+    width: 150px;
+  }
+
+  .img-label img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .wrapper {
+    gap: 10px;
+  }
+
+  .menu button,
+  #cart button {
+    padding: 12px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    height: 7vh;
+
+    font-size: 1.4em;
+  }
+
+  #main1 #title {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 1.5em;
+  }
+
+  .tS {
+    border-bottom: var(--accent-color) 1px solid;
+    padding: 10px;
+    font-size: 1.3em;
+  }
+
+  #content1 {
+    gap: 15px;
+  }
+  .item {
+    padding: 20px;
+
+    width: 220px;
+  }
+  .item2 {
+    font-size: 1.3em;
+  }
+  .item2 button {
+    font-size: 1em;
+
+    border-radius: 20px;
+
+    width: 150px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  /*footer*/
+  footer {
+    font-size: 1.2em;
+  }
+
+  /*!locations*/
+  #wrapperLocations {
+    margin-top: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .row {
+    height: 25vh;
+    width: 100vw;
+    max-width: 700px;
+  }
+
+  .c22 {
+    max-width: 300px;
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url("assets/beirut.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    animation: opacityChange 2s 0.3s ease-in-out backwards;
+  }
+
+  /* menu */
+  .menu {
+    font-size: 1.3em;
+  }
+  .menu h1 {
+    font-size: 3em;
+  }
+
+  .img-label {
+    width: 150px;
+  }
+
+  .img-label img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .wrapper {
+    gap: 10px;
+  }
+
+  .menu button,
+  #cart button {
+    padding: 12px;
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav {
+    height: 7vh;
+    justify-content: end;
+    font-size: 1.4em;
+  }
+  #phone {
+    display: unset;
+  }
+
+  #main1 #title {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 1.5em;
+  }
+
+  .tS {
+    border-bottom: var(--accent-color) 1px solid;
+    padding: 10px;
+    font-size: 1.3em;
+  }
+
+  #content1 {
+    gap: 15px;
+  }
+  .item {
+    padding: 20px;
+
+    width: 220px;
+  }
+  .item2 {
+    font-size: 1.3em;
+  }
+  .item2 button {
+    font-size: 1em;
+
+    border-radius: 20px;
+
+    width: 150px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  /*footer*/
+  footer {
+    font-size: 1.2em;
+  }
+
+  /*!locations*/
+  #wrapperLocations {
+    margin-top: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .row {
+    height: 30vh;
+    width: 100vw;
+    max-width: 700px;
+  }
+
+  .c22 {
+    max-width: 300px;
+    max-height: 300px;
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url("assets/beirut.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    animation: opacityChange 2s 0.3s ease-in-out backwards;
+  }
+
+  /* menu */
+  .menu {
+    font-size: 1.3em;
+  }
+  .menu h1 {
+    font-size: 3em;
+  }
+
+  .img-label {
+    width: 150px;
+  }
+
+  .img-label img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .wrapper {
+    gap: 10px;
+  }
+
+  .menu button,
+  #cart button {
+    padding: 12px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    height: 7vh;
+    justify-content: end;
+    font-size: 1.2em;
+  }
+  #phone {
+    display: unset;
+  }
+
+  #main1 #title {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 1.5em;
+  }
+
+  .tS {
+    border-bottom: var(--accent-color) 1px solid;
+    padding: 10px;
+    font-size: 1.3em;
+  }
+
+  #content1 {
+    gap: 15px;
+  }
+  .item {
+    padding: 20px;
+
+    width: 220px;
+  }
+  .item2 {
+    font-size: 1.3em;
+  }
+  .item2 button {
+    font-size: 0.6em;
+
+    border-radius: 20px;
+
+    width: 130px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  /*footer*/
+  footer {
+    font-size: 1.2em;
+  }
+
+  /*!locations*/
+  #wrapperLocations {
+    margin-top: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .row {
+    height: 30vh;
+    width: 100vw;
+    max-width: 700px;
+  }
+
+  .c22 {
+    max-width: 300px;
+    max-height: 300px;
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url("assets/beirut.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    animation: opacityChange 2s 0.3s ease-in-out backwards;
+  }
+
+  /* menu */
+  .menu {
+    font-size: 1em;
+  }
+  .menu h1 {
+    font-size: 3em;
+  }
+
+  .img-label {
+    width: 150px;
+  }
+
+  .img-label img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .wrapper {
+    gap: 10px;
+  }
+
+  .menu button,
+  #cart button {
+    padding: 12px;
+    font-size: 1em;
+  }
+}

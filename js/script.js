@@ -1,14 +1,7 @@
 
 
-ScrollReveal().reveal('.item2', {
-  opacity: 0,
-  delay: 200,
-  distance: '100px',
-  origin: 'top',
-  duration: 1000,
-  viewFactor:0.3,
-});
-ScrollReveal().reveal('.combo-item', {
+
+ScrollReveal().reveal('.wrapper2', {
   opacity: 0,
   delay: 200,
   distance: '100px',
