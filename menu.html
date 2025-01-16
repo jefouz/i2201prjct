@@ -23,6 +23,105 @@
    
     <div class="menu">
       <h1>Menu:</h1>
+
+      <fieldset id="Appetizers">
+        <legend>Appetizers</legend>
+        <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/Humus.jpg" alt="" />
+              <span>Hummus</span>
+            </div>
+            <span>price: $4.25</span>
+        <div class="wrapper">    <input
+          type="number"
+          min="1"
+          value="1"
+          class="quantity"
+          style="width: 50px"
+        />
+        <button onclick="addToCart('Hummus', 4.25)">Add to Cart</button></div>
+          </div>
+          <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/mtabal eggplant.jpg" alt="" />
+              <span>Mtabal Eggplant</span>
+            </div>
+            <span>price: $4.25</span>
+        <div class="wrapper">    <input
+          type="number"
+          min="1"
+          value="1"
+          class="quantity"
+          style="width: 50px"
+        />
+        <button onclick="addToCart('Mtabal Eggplant', 4.25)">Add to Cart</button></div>
+          </div>
+          <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/mashed avocado.jpg" alt="" />
+              <span>Mashed Avocado</span>
+            </div>
+            <span>price: $4.25</span>
+           <div class="wrapper"> 
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity"
+              style="width: 50px"
+            />
+            <button onclick="addToCart('Mashed Avocado', 4.25)">Add to Cart</button></div>
+          </div>
+          <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/kibbeh blaban.jpg" alt="" />
+              <span>Kibbeh Blaban</span>
+            </div>
+            <span>price: $4.25</span>
+           <div class="wrapper"> 
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity"
+              style="width: 50px"
+            />
+            <button onclick="addToCart('Kibbeh Blaban', 4.25)">Add to Cart</button></div>
+          </div>
+          <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/shish barak.jpg" alt="" />
+              <span>Shish Barak</span>
+            </div>
+            <span>price: $4.25</span>
+           <div class="wrapper"> 
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity"
+              style="width: 50px"
+            />
+            <button onclick="addToCart('Shish Barak', 4.25)">Add to Cart</button></div>
+          </div>
+          <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/frakeh.jpg" alt="" />
+              <span>Frakeh</span>
+            </div>
+            <span>price: $4.25</span>
+           <div class="wrapper"> 
+            <input
+              type="number"
+              min="1"
+              value="1"
+              class="quantity"
+              style="width: 50px"
+            />
+            <button onclick="addToCart('Frakeh', 4.25)">Add to Cart</button></div>
+          </div>
+     </fieldset>
+     <br>
      <fieldset>
         <legend>Burgers</legend>
         <div class="menu-item">
@@ -79,22 +178,7 @@
         <div class="menu-item">
             <div class="img-label">
               <img src="assets/vegtables pizza.jpg" alt="" />
-              <span>Pizza vegtables</span>
-            </div>
-            <span>price: $6</span>
-          <div class="wrapper">  <input
-            type="number"
-            min="1"
-            value="1"
-            class="quantity"
-            style="width: 50px"
-          />
-          <button onclick="addToCart('Pizza vegtables', 6)">Add to Cart</button></div>
-          </div>
-          <div class="menu-item">
-            <div class="img-label">
-              <img src="assets/pizza margheritta.webp" alt="" />
-              <span>Pizza margheritta</span>
+              <span>Veggie Pizza</span>
             </div>
             <span>price: $7</span>
           <div class="wrapper">  <input
@@ -104,14 +188,29 @@
             class="quantity"
             style="width: 50px"
           />
-          <button onclick="addToCart('Pizza margheritta', 7)">Add to Cart</button></div>
+          <button onclick="addToCart('Veggie Pizza', 6)">Add to Cart</button></div>
+          </div>
+          <div class="menu-item">
+            <div class="img-label">
+              <img src="assets/Pepporoni Pizza.jpg" alt="" />
+              <span>Pepporoni Pizza</span>
+            </div>
+            <span>price: $10</span>
+          <div class="wrapper">  <input
+            type="number"
+            min="1"
+            value="1"
+            class="quantity"
+            style="width: 50px"
+          />
+          <button onclick="addToCart('Pepporoni Pizza', 7)">Add to Cart</button></div>
           </div>
           <div class="menu-item">
             <div class="img-label">
               <img src="assets/cheese pizza.webp" alt="" />
-              <span>Pizza Cheese</span>
+              <span>Cheese Pizza</span>
             </div>
-            <span>price: $6</span>
+            <span>price: $8</span>
            <div class="wrapper"> <input
             type="number"
             min="1"
@@ -119,7 +218,7 @@
             class="quantity"
             style="width: 50px"
           />
-          <button onclick="addToCart('Pizza cheese', 6)">Add to Cart</button></div>
+          <button onclick="addToCart('Cheese Pizza', 6)">Add to Cart</button></div>
           </div>
      </fieldset>
      <br>
@@ -173,8 +272,156 @@
          
      </fieldset>
      <br>
+     <fieldset id="Salads">
+      <legend>Salads</legend>
+      <div class="menu-item">
+          <div class="img-label">
+            <img src="assets/Fattoush.jpg" alt="" />
+            <span>Fattoush</span>
+          </div>
+          <span>price: $3</span>
+      <div class="wrapper">    <input
+        type="number"
+        min="1"
+        value="1"
+        class="quantity"
+        style="width: 50px"
+      />
+      <button onclick="addToCart('Fattoush', 3)">Add to Cart</button></div>
+        </div>
+        <div class="menu-item">
+          <div class="img-label">
+            <img src="assets/tabbouleh.jpg" alt="" />
+            <span>Tabbouleh<span></span>
+          </div>
+          <span>price: $3</span>
+         <div class="wrapper"> <input
+          type="number"
+          min="1"
+          value="1"
+          class="quantity"
+          style="width: 50px"
+          
+        />
+        <button onclick="addToCart('Tabbouleh', 3)">Add to Cart</button></div>
+        </div>
+        <div class="menu-item">
+          <div class="img-label">
+            <img src="assets/caesar salad.jpg" alt="" />
+            <span>Ceaser Salad</span>
+          </div>
+          <span>price: $4</span>
+         <div class="wrapper"> 
+          <input
+            type="number"
+            min="1"
+            value="1"
+            class="quantity"
+            style="width: 50px"
+          />
+          <button onclick="addToCart('Ceaser Salad', 4)">Add to Cart</button></div>
+        </div>
+        <div class="menu-item">
+          <div class="img-label">
+            <img src="assets/tuna salad.jpg" alt="" />
+            <span>Tuna Salad</span>
+          </div>
+          <span>price: $4</span>
+         <div class="wrapper"> 
+          <input
+            type="number"
+            min="1"
+            value="1"
+            class="quantity"
+            style="width: 50px"
+          />
+          <button onclick="addToCart('Tuna salad', 4)">Add to Cart</button></div>
+        </div>
+   </fieldset>
+     <br>
+     <fieldset id="Deserts">
+      <legend>Desserts</legend>
+      <div class="menu-item">
+        <div class="img-label">
+          <img src="assets/icecream.jpg" alt="" />
+          <span>Arab Icecream</span>
+        </div>
+        <span>price: $4.35</span>
+       <div class="wrapper"> <input
+        type="number"
+        min="1"
+        value="1"
+        class="quantity"
+        style="width: 50px"
+      />
+      <button onclick="addToCart('Arab Icecream', 4.35)">Add to Cart</button></div>
+      </div>
+
+      <div class="menu-item">
+          <div class="img-label">
+            <img src="assets/oreo-cup.jpg" alt="" />
+            <span>Oreo Cup</span>
+          </div>
+          <span>price: $4.35</span>
+         <div class="wrapper"> <input
+          type="number"
+          min="1"
+          value="1"
+          class="quantity"
+          style="width: 50px"
+        />
+        <button onclick="addToCart('Oreo Cup', 4.35)">Add to Cart</button></div>
+        </div>
+        <div class="menu-item">
+          <div class="img-label">
+            <img src="assets/nutella-crepe.jpg" alt="" />
+            <span>Nutella Crepe</span>
+          </div>
+          <span>price: $6</span>
+          <div class="wrapper"><input
+            type="number"
+            min="1"
+            value="1"
+            class="quantity"
+            style="width: 50px"
+          />
+          <button onclick="addToCart('Nutella Crepe', 6)">Add to Cart</button></div>
+        </div>
+        <div class="menu-item">
+          <div class="img-label">
+            <img src="assets/banan-split.jpg" alt="" />
+            <span>Banana Split</span>
+          </div>
+          <span>price: $6</span>
+         <div class="wrapper"> <input
+          type="number"
+          min="1"
+          value="1"
+          class="quantity"
+          style="width: 50px"
+        />
+        <button onclick="addToCart('Banana Split', 6)">Add to Cart</button></div>
+        </div>
+   </fieldset>
+     <br>
      <fieldset>
       <legend>Drinks</legend>
+      <div class="menu-item">
+        <div class="img-label">
+          <img src="assets/laban.png" alt="" />
+          <span>Laban</span>
+        </div>
+        <span>price: $1</span>
+       <div class="wrapper"> <input
+        type="number"
+        min="1"
+        value="1"
+        class="quantity"
+        style="width: 50px"
+      />
+      <button onclick="addToCart('Laban', 1)">Add to Cart</button></div>
+      </div>
+
       <div class="menu-item">
           <div class="img-label">
             <img src="assets/pepsi.avif" alt="" />
@@ -210,7 +457,7 @@
             <img src="assets/7up.jpg" alt="" />
             <span>7 up</span>
           </div>
-          <span>price: $5</span>
+          <span>price: $1</span>
          <div class="wrapper"> <input
           type="number"
           min="1"
@@ -221,6 +468,7 @@
         <button onclick="addToCart('7up', 1)">Add to Cart</button></div>
         </div>
    </fieldset>
+
     </div>
     <div id="cart">
       <h2>Cart</h2>
