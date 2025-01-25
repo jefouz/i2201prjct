@@ -18,7 +18,7 @@ ScrollReveal().reveal('.wrapper2', {
   viewFactor:0.3,
 
 });
-ScrollReveal().reveal('.tS', {
+ScrollReveal().reveal('.topSellers-title', {
   opacity: 0,
   delay: 0,
   distance: '10px',
