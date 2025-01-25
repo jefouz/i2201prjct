@@ -14,7 +14,7 @@ html {
 
 /*!body*/
 body {
-  font-family:Comic Sans MS, Comic Sans, cursive;
+  font-family:Comic Sans MS;
   font-weight: normal;
   background-color: var(--bg-color);
   overflow-x: hidden;
